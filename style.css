@@ -1,5 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Itim&family=Lobster&display=swap");
 
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #ffffff; /* Set your desired light background color */
+    color: #000000; /* Set your desired dark text color */
+  }
+}
+
 * {
   font-family: "Itim", cursive;
 }
