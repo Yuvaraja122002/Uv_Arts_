@@ -4,6 +4,7 @@
   body {
     background-color: #ffffff; /* Set your desired light background color */
     color: #000000; /* Set your desired dark text color */
+    filter: brightness(100%) !important;
   }
 }
 
