@@ -117,3 +117,9 @@ window.matchMedia("(prefers-color-scheme: dark)").addListener((e) => {
     // Other styles for non-dark mode can be added here
   }
 });
+
+// Listener for color scheme changes
+window.matchMedia("(prefers-color-scheme: dark)").addListener(handleColorScheme);
+
+// Initial check for color scheme on page load
+handleColorScheme(window.matchMedia("(prefers-color-scheme: dark)").matches);
