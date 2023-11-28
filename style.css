@@ -1,0 +1,333 @@
+@import url("https://fonts.googleapis.com/css2?family=Itim&family=Lobster&display=swap");
+
+* {
+  font-family: "Itim", cursive;
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+}
+section {
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* --------------Navbar--------------- */
+#navbar {
+  position: sticky;
+  top: 0;
+  background: white;
+  z-index: 10;
+}
+.logo {
+  height: 12vh;
+}
+.logo img {
+  height: 12vh;
+  /* margin-left: 50px; */
+}
+.bold {
+  font-size: 30px;
+}
+.nav-item {
+  font-size: 22.5px;
+  margin-left: 30px;
+  font-weight: bold;
+  border: 0.1px solid transparent;
+}
+/* Style for the active menu item */
+.nav-link.active {
+  font-weight: bold;
+  font-size: 25.5px;
+  /* box-shadow: inset 1px 1px 5px #ffffff, 1px 1px 5px rgba(0, 0, 0, 20);
+  border-radius: 30px; */
+}
+/* ----------Navbar End--------------- */
+
+/* --------------Home---------------- */
+.home-p {
+  font-size: 19px;
+}
+/* --------------Home End-------------*/
+
+/* -------------About us---------- */
+#about img {
+  border-radius: 50px;
+}
+.btn {
+  box-shadow: inset 2px 2px 10px #ffffff, 2px 2px 10px rgba(0, 0, 0, 20);
+}
+.btn > a {
+  text-decoration: none;
+}
+.btn:hover a {
+  color: black;
+}
+/* -------------About us End---------- */
+
+/* -------------Services---------- */
+.service-heading {
+  text-align: center;
+}
+/* Style the modal content */
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 20px;
+  width: 100%;
+}
+/* -------------Services End----------*/
+
+/* ----------Contact us------ */
+.form-area {
+  padding-top: 2%;
+}
+.row.single-form {
+  box-shadow: 0 2px 20px -5px rgba(0, 0, 0, 0.5);
+}
+.left {
+  background: rgb(15, 15, 15);
+  padding: 170px 70px;
+}
+.left h2 {
+  font-family: poppins;
+  color: #fff;
+  font-weight: 600;
+  font-size: 38px;
+  text-align: center;
+}
+.left h2 span {
+  font-weight: 100;
+}
+.single-form {
+  background: #fff;
+}
+.right {
+  padding: 60px 100px;
+  position: relative;
+}
+.right i {
+  position: absolute;
+  font-size: 80px;
+  left: -27px;
+  top: 40%;
+  color: #fff;
+}
+.form-control {
+  border: 2px solid #000;
+}
+/* ----------Contact us End------ */
+
+/*------------------ Footer-------------- */
+.footer {
+  position: relative;
+  width: 100%;
+  background: rgb(204, 204, 204);
+  min-height: 100px;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.footer .icons,
+.footerMenus {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px 0;
+  flex-wrap: wrap;
+}
+.footer .icons,
+.footerMenus li {
+  list-style: none;
+}
+.footer .icons li a {
+  font-size: 2em;
+  color: black;
+  margin: 0 5px;
+  display: inline-block;
+  transition: 0.8s;
+}
+.footer .footerMenus li a {
+  font-size: 1em;
+  color: black;
+  margin: 0 10px;
+  text-decoration: none;
+  display: inline-block;
+}
+.footer .icons li a:hover {
+  transform: translateY(-20px);
+}
+.footer p {
+  color: #ffffff;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+.waves {
+  position: relative;
+  width: 100%;
+  height: 15vh;
+  margin-bottom: -7px;
+  /*Fix for safari gap*/
+  min-height: 100px;
+  max-height: 150px;
+}
+/* Animation */
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(85px, 0, 0);
+  }
+}
+/*------------------ Footer End-------------- */
+
+/* -----------Floating Whatsapp button------------- */
+.floating-whatsapp {
+  position: fixed;
+  bottom: 20px;
+  left: 55px;
+  z-index: 1000;
+}
+.floating-whatsapp img {
+  width: 60px;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  background-color: #25d366;
+  transition: transform 0.2s ease-in-out;
+}
+.floating-whatsapp img:hover {
+  transform: scale(1.1);
+}
+/* -----------Floating Whatsapp button End------------- */
+
+/* -----------Floating upwards button------------- */
+.floating-upwards-button {
+  position: fixed;
+  bottom: -50px; /* Initially hidden below the screen */
+  right: 20px;
+  z-index: 1000;
+  transition: bottom 0.3s;
+}
+
+.floating-upwards-button {
+  width: 60px;
+}
+.floating-upwards-button img {
+  width: 50px;
+  background-color: #fff;
+  border-radius: 60px;
+}
+/* Show the button when the user scrolls down */
+.show-button {
+  bottom: 20px; /* Display above the screen */
+}
+/* -----------Floating upwards button End------------- */
+
+/* ---------------Responsive----------- */
+/*---------Contact us--responsive-------------*/
+@media (min-width: 768px) and (max-width: 991px) {
+  .right i {
+    top: -52px;
+    transform: rotate(90deg);
+    left: 50%;
+  }
+}
+@media (max-width: 767px) {
+  .left {
+    padding: 50px 15px;
+    text-align: center;
+  }
+  .left h2 {
+    font-size: 25px;
+  }
+  .right {
+    padding: 25px;
+  }
+  .right i {
+    top: -52px;
+    transform: rotate(90deg);
+    left: 46%;
+  }
+  .right button {
+    width: 150px;
+    padding: 12px 0;
+  }
+}
+/*---------Contact us--responsive End-------------*/
+/* ---------Footer Responisve---------------- */
+@media (max-width: 768px) {
+  .waves {
+    height: 40px;
+    min-height: 40px;
+    margin-top: 20px;
+  }
+  .footerMenus {
+    font-size: 10px;
+  }
+}
+/* ---------Footer Responisve End---------------- */
+/* ---------Floating Whatsapp Responisve---------------- */
+@media (max-width: 768px) {
+  .floating-whatsapp {
+    bottom: 20px;
+    left: 30px;
+  }
+
+  .floating-whatsapp img {
+    width: 50px;
+  }
+}
+/* ---------Floating Whatsapp Responisve End---------------- */
+/* -----------Floating upwards button Responsive------------- */
+@media (max-width: 768px) {
+  .floating-upwards-button {
+    width: 20px;
+    right: 60px;
+  }
+  .floating-upwards-button img {
+    width: 50px;
+  }
+}
+/* -----------Floating upwards button Responsive End------------- */
+/* -----------Service content details------------- */
+@media (max-width: 768px) {
+  .modal-content {
+    background-color: #fefefe;
+    margin: 50% auto;
+    padding: 20px;
+    width: 100%;
+  }
+}
+/* -----------Service content details End------------- */
