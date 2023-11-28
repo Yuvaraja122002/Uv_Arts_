@@ -104,3 +104,16 @@ form.addEventListener("submit", (e) => {
     .catch((error) => console.error("Error!", error.message));
 });
 // --------------------------Mail validating End---------
+
+
+window.matchMedia("(prefers-color-scheme: dark)").addEventListener((e) => {
+  const prefersDarkMode = e.matches;
+  if (prefersDarkMode) {
+    document.body.style.backgroundColor = "#ffffff"; // Set your desired light background color
+    document.body.style.color = "#000000"; // Set your desired dark text color
+  } else {
+    document.body.style.backgroundColor = "#f3f3f3"; // Set a different background color for non-dark mode
+    document.body.style.color = "#333333"; // Set a different text color for non-dark mode
+    // Other styles for non-dark mode can be added here
+  }
+});
