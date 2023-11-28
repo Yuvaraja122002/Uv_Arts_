@@ -106,7 +106,7 @@ form.addEventListener("submit", (e) => {
 // --------------------------Mail validating End---------
 
 
-window.matchMedia("(prefers-color-scheme: dark)").addEventListener((e) => {
+window.matchMedia("(prefers-color-scheme: dark)").addListener((e) => {
   const prefersDarkMode = e.matches;
   if (prefersDarkMode) {
     document.body.style.backgroundColor = "#ffffff"; // Set your desired light background color
