@@ -118,7 +118,6 @@ form.addEventListener("submit", (e) => {
 });
 // --------------------------Mail validating End---------
 
-
 window.matchMedia("(prefers-color-scheme: dark)").addListener((e) => {
   const prefersDarkMode = e.matches;
   if (prefersDarkMode) {
@@ -132,7 +131,9 @@ window.matchMedia("(prefers-color-scheme: dark)").addListener((e) => {
 });
 
 // Listener for color scheme changes
-window.matchMedia("(prefers-color-scheme: dark)").addListener(handleColorScheme);
+window
+  .matchMedia("(prefers-color-scheme: dark)")
+  .addListener(handleColorScheme);
 
 // Initial check for color scheme on page load
 handleColorScheme(window.matchMedia("(prefers-color-scheme: dark)").matches);
