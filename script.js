@@ -73,6 +73,19 @@ function closeMobileMenu() {
     menu.classList.remove("show");
   }
 }
+
+var menu = document.getElementById("menu");
+var mobileNavbarButton = document.getElementById("yourMobileNavbarButtonId");
+
+function toggleMobileMenu() {
+  var bsCollapse = new bootstrap.Collapse(menu);
+  bsCollapse.toggle();
+}
+
+mobileNavbarButton.addEventListener("click", function () {
+  toggleMobileMenu();
+});
+
 // --------------------------Navbar function End---------------------------------------
 // --------------------------Floating upwards button---------------------------------------
 // Show the button when the user scrolls down
